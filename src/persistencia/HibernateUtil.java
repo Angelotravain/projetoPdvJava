@@ -54,12 +54,12 @@ public class HibernateUtil {
     static {
         try {
             factory = new AnnotationConfiguration()
-                    .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
-                    .setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver")
-                    .setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/sistemapdv")
-//                    .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect")
-//                    .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")
-//                    .setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/sistemapdv")
+//                    .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
+//                    .setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver")
+//                    .setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/sistemapdv")
+                    .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect")
+                    .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")
+                    .setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/SistemaPdv")
                     .setProperty("hibernate.connection.username", "root")
                     .setProperty("hibernate.connection.password", "root")
                     .setProperty("hibernate.hbm2ddl.auto", "update")
